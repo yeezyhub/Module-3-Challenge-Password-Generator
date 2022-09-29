@@ -52,7 +52,10 @@ function generatePassword(){
 
       }
 
-      window.alert("The password is: " + generatedPassword.join(""));
+      // window.alert("The password is: " + generatedPassword.join(""));
+
+      return generatedPassword.join("");
+
 
   }else{
     window.alert("Wrong input, try again.");
@@ -61,9 +64,6 @@ function generatePassword(){
 
 
 }
-
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
