@@ -11,7 +11,7 @@ function generatePassword(){
     var isSpecialChar = window.confirm("Click OK to confirm including special characters."); //ask the user if they want to include special characters
       if(isSpecialChar){
         // Special characters
-        var specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", " < ", "=", " > ", " ? ", "@", "[" , "]", " ^ ", "_", "`", "{", "|", "}", "~"];
+        var specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[" , "]", "^", "_", "`", "{", "|", "}", "~"];
       }else{
         var specialChar = [];
       }
@@ -55,25 +55,11 @@ function generatePassword(){
         generatedPassword[i] = allCharacters[allCharactersRandom[i]];
 
       }
-        // if (generatedPassword.length != charLength) {
-        //   for (let i = 0; i < 10; i++) {
-            
-            
-        //     if (generatedPassword.length == charLength) {
-        //       return generatedPassword = generatedPassword.push(allCharactersRandom[i]);
-        //     }
-        //   }
-          
-        // } else {
-        //   //join method is used to erase unwanted characters and replace method is to remove spaces in between
-        // return generatedPassword.join("").replace(/\s/g,'');
-        // }
-        return generatedPassword.join("").replace(/\s/g,'');
-      
-
+        return generatedPassword.join("");
+      }
+  }else{
     window.alert("Wrong input, try again.");
     generatePassword();
-      }
   }
   }
 
