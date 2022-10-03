@@ -2,7 +2,7 @@
 
 ## Deployed Website
 
-
+[Password Generator](https://yeezyhub.github.io/Module-3-Challenge-Password-Generator/)
 
 ## Description
 
@@ -11,7 +11,7 @@
 ## Usage
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To generate a password, click on "Generate Password" button. Then the page will ask you how long you want your password to be. After choosing that the prompts for choosing special, numeric, lower case and upper case will show up for you to choose. After the last question, the generated customized and secure password will be shown on the website inside the textbox so you can copy and paste it to store it.
 
-<!-- <img src="./assets/images/yeezy-my-portfolio.png" width="50%" height="50%"> -->
+<img src="./assets/images/password-generator.gif">
 
 ## Credits
 
