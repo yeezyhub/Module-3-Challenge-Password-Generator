@@ -13,6 +13,7 @@ function generatePassword(){
         // Special characters
         var specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[" , "]", "^", "_", "`", "{", "|", "}", "~"];
       }else{
+        //if special characters are not chosen by the user, the array is updated as empty
         var specialChar = [];
       }
 
@@ -21,6 +22,7 @@ function generatePassword(){
         // Numeric characters
         var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
       }else{
+        //if numeric characters are not chosen by the user, the array is updated as empty
         var numbers = [];
       }
 
@@ -29,6 +31,7 @@ function generatePassword(){
         // Alphabetical lower case characters
         var alphabethLowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
       }else{
+        //if lower case characters are not chosen by the user, the array is updated as empty
         var alphabethLowerCase = [];
       }
 
@@ -37,6 +40,7 @@ function generatePassword(){
         // Alphabetical upper case characters
         var alphabethUpperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
       }else{
+        //if upper case characters are not chosen by the user, the array is updated as empty
         var alphabethUpperCase = [];
       }
 
@@ -55,9 +59,11 @@ function generatePassword(){
         generatedPassword[i] = allCharacters[allCharactersRandom[i]];
 
       }
+        //types the generated password to the textbox
         return generatedPassword.join("");
       }
-  }else{
+  }else{ 
+    //if input is not what we want, this else runs and restarts the password generator
     window.alert("Wrong input, try again.");
     generatePassword();
   }
