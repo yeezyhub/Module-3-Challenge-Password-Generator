@@ -1,8 +1,8 @@
-# Module-3-Challenge-Password-Generator
+# Password-Generator
 
 ## Deployed Website
 
-[Password Generator](https://yeezyhub.github.io/Module-3-Challenge-Password-Generator/)
+[Password Generator](https://yeezyhub.github.io/Password-Generator/)
 
 ## Description
 
